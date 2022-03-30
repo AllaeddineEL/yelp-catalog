@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: learningcenter-portal
+  description: Learning Center Portal App
+  tags:
+    - python
+  annotations:
+    "backstage.io/kubernetes-label-selector": "learningcenter.tanzu.vmware.com/component=portal,deployment=learningcenter-portal"
+    "backstage.io/techdocs-ref": dir:.
+  links:
+    - url: https://workshop.tko.mytanzusandbox.com
+      title: "learningcenter portal Information"
+      icon: locallibrary
+spec:
+  type: service
+  lifecycle: experimental
+  owner: team-a
+  system: yelb
+  dependsOn: [Component:yelb-appserver]

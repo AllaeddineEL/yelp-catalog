@@ -4,9 +4,10 @@ metadata:
   name: yelb-catalog-info
   description: A sample catalog for the yelb application
   annotations:
-    'backstage.io/techdocs-ref': dir:.
+    "backstage.io/techdocs-ref": dir:.
 spec:
   targets:
+    - ./components/learning-center/portal.yaml
     - ./components/yelb-ui/yelb-ui.yaml
     - ./components/redis-server/redis-server.yaml
     - ./components/yelb-db/yelb-db.yaml
